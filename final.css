@@ -1,0 +1,275 @@
+/* Global styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+  margin: 0 auto;
+}
+.container-fluid {
+  background-color: #222;
+  display: flex;
+  margin: auto;
+  padding: 0%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container1 {
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+}
+/*Navigation*/
+.nav {
+  float: right;
+  color: #fff;
+  padding: 10px;
+}
+
+.container1 a {
+  padding: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: medium;
+}
+.container1 a:hover {
+  color: #b5b5b5;
+  text-decoration: none;
+}
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* Navigation bar */
+/* Hero section */
+
+/* About section */
+.about-section {
+  padding: 40px 0;
+  background-color: #dadada;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 55px;
+  color: #000000;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+/*service section*/
+
+.services-section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.service-item {
+  margin-bottom: 20px;
+}
+
+.service-item i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+/* Portfolio section */
+.portfolio-section {
+  padding: 80px 0;
+  background-color: #20364b;
+}
+
+.portfolio-section h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.portfolio-item {
+  margin-bottom: 40px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+/* FAQ section */
+.faq-section {
+  padding: 80px 0;
+  background-color: #dcdcdc;
+}
+
+.faq-section h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+section.card1 {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #20364b;
+  border-radius: 10px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card1 h2 {
+  color: #fff;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  padding: 10px;
+}
+.card1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px #000000;
+  background-color: #20364b;
+  color: #ffffff;
+}
+.card1 {
+  display: inline;
+}
+.card1__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #20364b;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card1:hover .card1__content {
+  transform: rotateX(0deg);
+}
+
+.card1__title {
+  margin: 0;
+  font-size: 24px;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.card1:hover svg {
+  scale: 0;
+}
+
+.card1__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.4;
+}
+/* Contact section */
+.contact-section {
+  padding: 80px 0;
+  background-color: #20364b;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.contact-section form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-section label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact-section button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #20364b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background-color: #444;
+}
+/* Footer */
+.footer-section {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-section p {
+  margin: 0;
+}
